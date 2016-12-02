@@ -1,7 +1,6 @@
+*.o
 .DS_Store
-tags
-bin2hpp
-
-tmp/
 .build/
-
+bin2hpp
+tags
+tmp/
