@@ -18,6 +18,8 @@ $ make
 $ bin2hpp /path/to/file
 ```
 
+***
+
 ```
 Copyright © 2000-2016 Andrey A. Ugolnik.
 All Rights Reserved.
