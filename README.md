@@ -1,4 +1,4 @@
-##Binary to C array converter by Andrey A. Ugolnik##
+## Binary to C array converter by Andrey A. Ugolnik
 based on BIN2HPP.CPP by Shabarshin A. A. 02.09.2000
 
 ***
@@ -9,7 +9,7 @@ You can browse the source code repository on BitBucket or get a copy using git w
 ```
 $ git clone https://bitbucket.org/andreyu/bin2hpp.git
 $ cd bin2hpp
-$ make
+$ make release
 ```
 
 ##Usage##
@@ -21,8 +21,8 @@ $ bin2hpp /path/to/file
 ***
 
 ```
-Copyright © 2000-2016 Andrey A. Ugolnik.
+Copyright © 2000-2024 Andrey A. Ugolnik.
 All Rights Reserved.
-http://www.ugolnik.info
+https://www.ugolnik.info
 andrey@ugolnik.info
 ```

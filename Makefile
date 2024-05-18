@@ -1,15 +1,25 @@
-bin2hpp: bin2hpp.o
-	g++ -std=c++14 -O2 -o bin2hpp bin2hpp.o
+BUILD_DIR_RELEASE=.build_release
+BUILD_DIR_DEBUG=.build_debug
 
-bin2hpp.o: bin2hpp.cpp
-	g++ -std=c++14 -O2 -c bin2hpp.cpp
+all:
+	@echo "Usage:"
+	@echo "    make <release | debug>"
+	@echo "    make <check>"
+	@echo "    make <clean>"
+
+release:
+	$(shell if [ ! -d $(BUILD_DIR_RELEASE) ]; then mkdir $(BUILD_DIR_RELEASE); fi )
+	cd $(BUILD_DIR_RELEASE) ; cmake -DCMAKE_BUILD_TYPE=Release .. ; make ; cd ..
+	cp $(BUILD_DIR_RELEASE)/bin2hpp .
+
+debug:
+	$(shell if [ ! -d $(BUILD_DIR_DEBUG) ]; then mkdir $(BUILD_DIR_DEBUG); fi )
+	cd $(BUILD_DIR_DEBUG) ; cmake -DCMAKE_BUILD_TYPE=Debug .. ; make ; cd ..
+	cp $(BUILD_DIR_DEBUG)/bin2hpp .
+
+check:
+	cppcheck -j 1 --enable=all -f -I src src/ 2> cppcheck-output
 
 clean:
-	rm -f bin2hpp bin2hpp.o
-
-install:
-	cp bin2hpp /usr/local/bin/bin2hpp
-
-uninstall:
-	rm -f /usr/local/bin/bin2hpp
+	rm -fr $(BUILD_DIR_RELEASE) $(BUILD_DIR_DEBUG) bin2hpp
 

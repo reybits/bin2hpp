@@ -1,6 +1,6 @@
-*.o
+/.build_*/
 .DS_Store
-.build/
+/.build/
 bin2hpp
 tags
 tmp/
