@@ -1,20 +1,17 @@
-## Binary to C array converter
+# Binary to C-array converter
 
-> based on BIN2HPP.CPP
-> by Shabarshin A. A. (02.09.2000)
+> based on BIN2HPP.CPP (02.09.2000) by Shabarshin A. A.
 
-***
+### Download and build
 
-## Download and build
-
-You can browse the source code repository on BitBucket or get a copy using git with the following command:
+You can view the source code repository on BitBucket or get a copy using git with the following command:
 ```
 $ git clone https://bitbucket.org/andreyu/bin2hpp.git
 $ cd bin2hpp
 $ make release
 ```
 
-## Usage
+### Usage
 
 ```
 $ bin2hpp input_path [output_path] [options]
@@ -23,9 +20,7 @@ $ bin2hpp input_path [output_path] [options]
 
 ***
 
-```
-© 2000-2024 Andrey A. Ugolnik.
-All Rights Reserved.
-https://www.ugolnik.info
-andrey@ugolnik.info
-```
+*© 2000-2024 Andrey A. Ugolnik.*
+*All Rights Reserved.*
+*https://www.ugolnik.info*
+*andrey@ugolnik.info*
