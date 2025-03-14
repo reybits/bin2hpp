@@ -1,29 +1,23 @@
 # Binary to C-array converter
 
-![GitHub License](https://img.shields.io/github/license/andreyugolnik/bin2hpp)
-![GitHub top language](https://img.shields.io/github/languages/top/andreyugolnik/bin2hpp)
+This tool converts binary files into C-style arrays. It is useful for embedding binary data directly into C/C++ source code.
 
-### Download and build
+## Download and build
 
-You can view the source code repository on BitBucket or get a copy using git with the following command:
+You can view the source code repository on GitHub or get a copy using git with the following command:
+```sh
+git clone https://github.com/reybits/bin2hpp.git
+cd bin2hpp
+make release
 ```
-$ git clone https://bitbucket.org/andreyu/bin2hpp.git
-$ cd bin2hpp
-$ make release
-```
 
-### Usage
+## Usage
 
-```
-$ bin2hpp input_path [output_path] [options]
+```sh
+bin2hpp input_path [output_path] [options]
 ```
 `output_path` and `options` are optional.
 
 ***
 
-> based on BIN2HPP.CPP (02.09.2000) by Shabarshin A. A.
-
-*© 2000-2024 Andrey A. Ugolnik.*
-*All Rights Reserved.*
-*https://www.ugolnik.info*
-*andrey@ugolnik.info*
+*© 2000-2024 Andrey A. Ugolnik. All Rights Reserved.* | *https://www.ugolnik.info* | *andrey@ugolnik.info*
