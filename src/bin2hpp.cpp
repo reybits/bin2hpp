@@ -12,6 +12,7 @@
 #include "file.h"
 #include "file_cache.h"
 
+#include <cstdint>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
